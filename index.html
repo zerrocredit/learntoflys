@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game - Learn to Fly</title>
+    <title>Learn to Fly</title>
     <style>
         html, body {
             margin: 0;
@@ -12,8 +12,15 @@
             height: 100%;
             overflow: hidden;
             background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         #game {
+            width: 100%;
+            height: 100%;
+        }
+        ruffle-player {
             width: 100%;
             height: 100%;
         }
@@ -27,7 +34,7 @@
             const ruffle = window.RufflePlayer.newest();
             const player = ruffle.createPlayer();
             document.getElementById("game").appendChild(player);
-            player.load("flash_learn-to-fly.swf");  <!-- Make sure the file name matches -->
+            player.load("flash_learn-to-fly.swf");
         });
     </script>
 </body>
